@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto-regular;
+    background-color: #0D203B;
+    color: white;
+}
+
+.up {
+    background-color: #21324B;
+    padding: 10px 0;
+}
+
+.up nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.up nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.img img {
+    width: 400px;
+}
+
+.acceuil {
+    background-color: #05759f;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto 30px;
+    border-radius: 25px;
+    max-width:  1000px;
+}
+
+.acceuil h2 {
+    margin-bottom: 15px;
+}
+
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.services h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+    background-color: #05759f;
+    border-radius: 15px;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #064769;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 250px;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.ambiance {
+    position: relative;
+    max-width: 100%;
+    margin: 30px;
+}
+
+.ambiance img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.time-contact {
+    background-color: #05759f;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    border-radius: 15px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.horaire-liste {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.horaire-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.my-team{
+    position: relative;
+    max-width: 100%;
+    margin: 30px;
+}
+
+.my-team img{
+    display: block;
+    height: auto;
+    border-radius: 15px;
+}
+
+.doctors-text{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.lien{
+    background-color: #05759f;
+    margin: 10px auto;
+    max-width: 300px;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.mon-lien{
+    text-align: center;
+    color: white;
+}
+
+.mon-lien a{
+    color: turquoise;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(Roboto-Regular.ttf);
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services h2 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     .text, .doctors-text {
+        font-size: 48px;
+        top: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .up nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .img img {
+        width: 250px;
+    }
+
+    .acceuil {
+        padding: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .text, .doctors-text {
+        font-size: 32px;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .services h2 {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .time-contact {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card{
+        height: 150px;
+    }
+
+    .acceuil h2, .doctors-text, .text {
+        font-size: 24px;
+    }
+
+    .mon-lien {
+        font-size: 14px;
+    }
+
+    .mon-lien a {
+        word-break: break-all;
+    }
+
+    .text, .doctors-text {
+        font-size: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4px;
+        width: 90%;
+    }
+
+    .img img {
+        width: 180px;
+    }
+
+    .lien {
+        max-width: 90%;
+    }
+}
