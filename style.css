@@ -213,15 +213,26 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
+    .card{
+        height: 250px;
+        padding: 0;
+    }
+
     .services h2 {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
 
-     .text, .doctors-text {
+     .text{
         font-size: 48px;
         top: 60%;
+    }
+
+    .doctors-text {
+        font-size: 48px;
+        top: 50%;
+        left: 5%;
     }
 }
 
@@ -242,13 +253,22 @@ img {
     }
 
     .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .text, .doctors-text {
+
+    .text {
         font-size: 32px;
         top: 50%;
-        left: 50%;
+        left: 5%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .doctors-text {
+        font-size: 32px;
+        top: 50%;
+        left: 10%;
         text-align: center;
         padding: 5px;
     }
@@ -272,10 +292,6 @@ img {
 }
 
 @media (max-width: 480px) {
-    .card{
-        height: 150px;
-    }
-
     .acceuil h2, .doctors-text, .text {
         font-size: 24px;
     }

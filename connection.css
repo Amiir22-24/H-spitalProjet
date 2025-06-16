@@ -186,4 +186,7 @@ button.btn:hover {
     .icone-localisation {
         width: 40px;
     }
+    .time-contact{
+        margin-top: 0;
+    }
 }
